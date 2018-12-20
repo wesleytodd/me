@@ -11,7 +11,9 @@
     "url": "https://github.com/wesleytodd/me.git"
   },
   "scripts": {
-    "test": "standard && ./bin/card.js"
+    "test": "standard && ./bin/card.js",
+    "prepublishOnly": "npm t",
+    "postpublish": "git push origin && git push origin --tags"
   },
   "keywords": [],
   "author": "Wes Todd <wes@wesleytodd.com> (http://wesleytodd.com)",
